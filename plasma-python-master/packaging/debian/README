@@ -1,0 +1,6 @@
+README
+
+Plasma is an arcade button lighting system for your Raspberry Pi.
+
+Learn more: https://shop.pimoroni.com/products/plasma
+For examples run: `curl -sS get.pimoroni.com/plasma | bash`

@@ -1,0 +1,3 @@
+extend-diff-ignore = "^[^/]+\.egg-info/"
+tar-ignore
+tar-ignore=.tox

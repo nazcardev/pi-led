@@ -1,0 +1,14 @@
+[Unit]
+Description=Plasma LED Sequencer Daemon
+DefaultDependencies=no
+After=local-fs.target
+
+[Service]
+# Change -o to SERIAL:/dev/ttyACM0 for Plasma via Picade Player X
+ExecStart=/usr/bin/plasma -d -o GPIO:15:14
+Restart=on-failure
+Type=forking
+PIDFile=/var/run/plasma.pid
+
+[Install]
+WantedBy=multi-user.target
